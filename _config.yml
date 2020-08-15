@@ -21,14 +21,14 @@
 title: Léo Czajka
 email: leo.czajka@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Taxation, Administration and Inequality in Africa
+  Research about Taxation, Administration and Inequality in Africa
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Leo_Czajka
 github_username:  leoczajka
 
 # Build settings
-theme: jekyll-theme-dinky 
+theme: minima 
 plugins:
   - jekyll-feed
 
