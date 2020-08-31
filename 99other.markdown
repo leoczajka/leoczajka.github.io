@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Other
-permalink: /zother/
+permalink: /other/
 ---
 work in progress
 ![foxes](/assets/foxes.jpg)
