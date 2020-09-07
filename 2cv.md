@@ -32,5 +32,5 @@ permalink: /cv/
 
 2019 - 2020  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Grant from the International Center for Taxation and Development
 
-2018 - 2022 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Bourse FRESH-FNRS - 2 x 2 years full-scholarship
+2019 - 2022 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Bourse FRESH-FNRS - 2 x 2 years full-scholarship
 
