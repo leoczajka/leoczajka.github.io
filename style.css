@@ -1,0 +1,154 @@
+/* Léo Czajka — personal website */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --text: #1f2328;
+  --muted: #6a6f76;
+  --accent: #c2410c;
+  --rule: #e3e1dc;
+  --bg: #ffffff;
+  --serif: "Source Serif 4", Georgia, serif;
+  --sans: Inter, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 17.5px;
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 2px; }
+
+h1, h2 { font-family: var(--sans); font-weight: 600; }
+h1 { font-size: 28px; letter-spacing: -0.01em; margin: 48px 0 20px; }
+h2 {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin: 48px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--rule);
+}
+
+p { margin: 0; }
+
+/* ---------- Header ---------- */
+.navbar { border-bottom: 1px solid var(--rule); font-family: var(--sans); }
+.navbar .inner,
+.main-container,
+footer { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+.navbar .inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 4px 24px;
+  padding-top: 22px;
+  padding-bottom: 18px;
+}
+.navbar .brand { font-weight: 600; font-size: 17px; color: var(--text); }
+.navbar ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 22px; }
+.navbar li a { color: var(--muted); font-size: 15px; }
+.navbar li a:hover, .navbar li a.active { color: var(--text); text-decoration: none; }
+.navbar li a.active { font-weight: 500; }
+
+/* ---------- Home ---------- */
+.photo-box { float: right; width: 200px; margin: 6px 0 16px 32px; }
+.photo { display: block; width: 100%; border-radius: 4px; }
+.pronounce {
+  margin-top: 8px !important;
+  font-family: var(--sans);
+  font-size: 12.5px;
+  line-height: 1.4;
+  color: var(--muted);
+  text-align: center;
+}
+.divhome { margin-bottom: 16px; }
+.listen {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+.listen:hover { text-decoration: underline; text-underline-offset: 2px; }
+.main-container > .clearfix:first-child { margin-top: 48px; }
+.clearfix::after { content: ""; display: table; clear: both; }
+
+/* ---------- Research ---------- */
+.paper { margin-top: 22px; }
+.paper .title b { font-weight: 600; }
+.paper .title a { color: var(--text); }
+.paper .title a:hover { color: var(--accent); }
+.paper p:not(.title) { color: var(--muted); font-size: 16px; }
+.paper p b { font-weight: 600; color: var(--text); }
+
+.paper details { margin-top: 2px; font-size: 16px; }
+.paper summary {
+  display: inline;
+  cursor: pointer;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--accent);
+  list-style: none;
+}
+.paper summary::-webkit-details-marker { display: none; }
+.paper summary::after { content: " ↓"; }
+.paper details[open] summary::after { content: " ↑"; }
+.paper details p { color: var(--text) !important; margin: 0; line-height: 1.55; }
+
+/* Abstract panel: figure on the left, text on the right */
+.abstract {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 24px;
+  align-items: center;
+  margin-top: 10px;
+  padding: 18px;
+  background: #f7f7f7;
+  border-radius: 6px;
+}
+.abstract.no-fig { grid-template-columns: 1fr; }
+.abstract figure { margin: 0; }
+.abstract figcaption {
+  margin-top: 8px;
+  font-family: var(--sans);
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.abstract figcaption b { font-weight: 600; font-style: normal; color: var(--text); }
+.abstract img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); background: #fff; }
+.abstract .label {
+  font-family: var(--sans);
+  font-size: 11.5px !important;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 6px !important;
+}
+.paper .abstract p { font-size: 14px; line-height: 1.5; text-align: justify; hyphens: auto; }
+@media (max-width: 600px) { .abstract { grid-template-columns: 1fr; } }
+
+footer {
+  margin-top: 64px;
+  padding-bottom: 32px;
+  font-family: var(--sans);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+@media (max-width: 600px) {
+  body { font-size: 16.5px; }
+  .photo-box { float: none; margin: 0 0 20px; width: 160px; }
+  .pronounce { text-align: left; }
+  h1 { margin-top: 32px; }
+}
